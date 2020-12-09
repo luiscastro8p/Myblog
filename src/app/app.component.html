@@ -43,6 +43,11 @@
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
       <span>Video</span>
     </div>
+    <div class="card card-small" (click)="selection.value = 'tedx'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>TEDx</span>
+    </div>
 
 
 
@@ -64,21 +69,36 @@
 
     <div *ngSwitchCase="'pwa'">
       <div>
-        <p><b>Age:</b>
-          My dog ​​will have 8 of age
-        </p> <br>
-        <p><b>Male:</b>
-          i will have a new member male in the family, next year!!
-        </p> <br>
-        <p><b>Female:</b>
-          i like, females, between the ages of 19 and 23. hahaha xd
-        </p> <br>
-        <p><b>Meet:</b>
-          i have all days a meet of hackademy
-        </p> <br>
-        <p><b>spell:</b>
-          yesterday i spell my name, i had never done it
-        </p> <br>
+        <div>
+          <p><b>Age:</b>
+            My dog ​​will have 8 of age
+          </p> <br>
+          <img src="../assets/yiyi.jpg" alt="yiyi" width="100">
+        </div>
+        <div>
+          <p><b>Male:</b>
+            i will have a new member male in the family, next year!!
+          </p> <br>
+          <img src="../assets/sobrino.jpeg" alt="yiyi" width="100">
+        </div>
+        <div>
+          <p><b>Female:</b>
+            i like, females, between the ages of 19 and 23. hahaha xd
+          </p> <br>
+          <img src="../assets/x.png" alt="yiyi" width="100">
+        </div>
+        <div>
+          <p><b>Meet:</b>
+            i have all days a meet of hackademy
+          </p> <br>
+          <img src="https://hackademy.mx/assets/images/logo.svg" alt="yiyi" width="100">
+        </div>
+        <div>
+          <p><b>spell:</b>
+            yesterday i spell my name, i had never done it
+          </p> <br>
+          <img src="../assets/dele.jpg" alt="yiyi" width="100">
+        </div>
       </div>
     </div>
     <div *ngSwitchCase="'video'">
@@ -87,8 +107,10 @@
         <video src="../assets/video.mkv" width="500" controls></video>
       </div>
     </div>
-    <div *ngSwitchCase="'test'">ng test</div>
-    <div *ngSwitchCase="'build'">ng build --prod</div>
+    <div *ngSwitchCase="'tedx'">
+      :c
+    </div>
+
   </div>
 
 
