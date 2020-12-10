@@ -55,7 +55,7 @@
 
   <!-- Terminal -->
   <div class="terminal" [ngSwitch]="selection.value">
-    <div *ngSwitchDefault>
+    <div *ngSwitchCase="'component'">
       i'm luis castro, I'm 21 years old,<br> i'm from los mochis sinaloa and i'm a good man xd
     </div>
     <div *ngSwitchCase="'material'">
@@ -103,7 +103,6 @@
     </div>
     <div *ngSwitchCase="'video'">
       <div>
-
         <video src="../assets/video.mkv" width="500" controls></video>
       </div>
     </div>
@@ -112,11 +111,32 @@
     </div>
 
   </div>
+  <h2>Homework #2</h2>
+  <p>Select a options wanted!</p>
+
+  <input type="hidden" #homework2>
+
+  <div class="card-container">
+
+    <div class="card card-small" (click)="homework2.value = 'biography'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+      <span>biography</span>
+    </div>
 
 
 
-
-
+  </div>
+  <div class="terminal" [ngSwitch]="homework2.value">
+    <div *ngSwitchCase="'biography'">
+      <div>
+        my mother it's my favorite person, why... she's very hard-working,
+        she makes dresses for weddi and 15 years,
+        she's love her job,
+        has worked more of 10 years, is good person, honest, simpatic and has a good memes
+      </div>
+    </div>
+  </div>
 
   <svg id="clouds" alt="Gray Clouds Background" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677"
     viewBox="0 0 2611.084 485.677">
