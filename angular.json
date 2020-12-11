@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "My-english-class:build"
+            "browserTarget": "Myblog:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "My-english-class:build:production"
+              "browserTarget": "Myblog:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "My-english-class:build"
+            "browserTarget": "Myblog:build"
           }
         },
         "test": {
@@ -114,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "My-english-class:serve"
+            "devServerTarget": "Myblog:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "My-english-class:serve:production"
+              "devServerTarget": "Myblog:serve:production"
             }
           }
         },
@@ -129,7 +129,7 @@
       }
     }
   },
-  "defaultProject": "My-english-class",
+  "defaultProject": "Myblog",
   "cli": {
     "analytics": "fc12f563-4f0b-4b4e-90bf-f9d6b4771e29"
   }
