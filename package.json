@@ -1,6 +1,7 @@
 {
   "name": "my-english-class",
   "version": "0.0.0",
+  "homepage": "https://luiscastro8p.github.io/Myblog/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
